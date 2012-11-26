@@ -1,0 +1,2 @@
+module AfterIntershipsHelper
+end

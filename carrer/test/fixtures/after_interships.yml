@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  intershipPriod: 1
+  workingHours: MyString
+  impressionContents: MyString
+  levelOfAchievement: MyString
+  overallImpression: MyString
+  ambition: MyString
+  commentsOfTachers: MyString
+
+two:
+  intershipPriod: 1
+  workingHours: MyString
+  impressionContents: MyString
+  levelOfAchievement: MyString
+  overallImpression: MyString
+  ambition: MyString
+  commentsOfTachers: MyString

@@ -1,0 +1,35 @@
+<h1>Listing after_interships</h1>
+
+<table>
+  <tr>
+    <th>Intershippriod</th>
+    <th>Workinghours</th>
+    <th>Impressioncontents</th>
+    <th>Levelofachievement</th>
+    <th>Overallimpression</th>
+    <th>Ambition</th>
+    <th>Commentsoftachers</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @after_interships.each do |after_intership| %>
+  <tr>
+    <td><%= after_intership.intershipPriod %></td>
+    <td><%= after_intership.workingHours %></td>
+    <td><%= after_intership.impressionContents %></td>
+    <td><%= after_intership.levelOfAchievement %></td>
+    <td><%= after_intership.overallImpression %></td>
+    <td><%= after_intership.ambition %></td>
+    <td><%= after_intership.commentsOfTachers %></td>
+    <td><%= link_to 'Show', after_intership %></td>
+    <td><%= link_to 'Edit', edit_after_intership_path(after_intership) %></td>
+    <td><%= link_to 'Destroy', after_intership, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New After intership', new_after_intership_path %>

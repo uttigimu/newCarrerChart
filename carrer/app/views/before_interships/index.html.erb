@@ -1,0 +1,43 @@
+<h1>Listing before_interships</h1>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Capital</th>
+    <th>Business</th>
+    <th>Delegate</th>
+    <th>Address1</th>
+    <th>Address2</th>
+    <th>Intershipscontent</th>
+    <th>Unit</th>
+    <th>Receivingperson</th>
+    <th>Tel</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @before_interships.each do |before_intership| %>
+  <tr>
+    <td><%= before_intership.company %></td>
+    <td><%= before_intership.capital %></td>
+    <td><%= before_intership.business %></td>
+    <td><%= before_intership.delegate %></td>
+    <td><%= before_intership.address1 %></td>
+    <td><%= before_intership.address2 %></td>
+    <td><%= before_intership.intershipsContent %></td>
+    <td><%= before_intership.unit %></td>
+    <td><%= before_intership.receivingPerson %></td>
+    <td><%= before_intership.tel %></td>
+    <td><%= before_intership.email %></td>
+    <td><%= link_to 'Show', before_intership %></td>
+    <td><%= link_to 'Edit', edit_before_intership_path(before_intership) %></td>
+    <td><%= link_to 'Destroy', before_intership, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Before intership', new_before_intership_path %>

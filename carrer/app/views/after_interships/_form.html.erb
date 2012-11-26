@@ -1,0 +1,45 @@
+<%= form_for(@after_intership) do |f| %>
+  <% if @after_intership.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@after_intership.errors.count, "error") %> prohibited this after_intership from being saved:</h2>
+
+      <ul>
+      <% @after_intership.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <p class="formLabel">①研修期間</p>
+    <%= f.number_field :intershipPriod %>
+  </div>
+  <div class="field">
+    <p class="formLabel">②就業時間</p>
+    <%= f.text_field :workingHours %>
+  </div>
+  <div class="field">
+    <p class="formLabel">⑤印象に残った研修内容</p>
+    <%= f.text_field :impressionContents %>
+  </div>
+  <div class="field">
+    <p class="formLabel">⑥達成度</p>
+    <%= f.text_field :levelOfAchievement %>
+  </div>
+  <div class="field">
+    <p class="formLabel">⑩研修全体を通しての感想</p>
+    <%= f.text_field :overallImpression %>
+  </div>
+  <div class="field">
+    <p class="formLabel">⑪これからの大学生活、社会人に向けての抱負</p>
+    <%= f.text_field :ambition %>
+  </div>
+  <div class="field">
+    <p class="formLabel">担当教員からのコメント</p>
+    <%= f.text_field :commentsOfTachers %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  company: MyString
+  capital: MyString
+  business: MyString
+  delegate: MyString
+  address1: MyString
+  address2: MyString
+  intershipsContent: MyString
+  unit: MyString
+  receivingPerson: MyString
+  tel: MyString
+  email: MyString
+
+two:
+  company: MyString
+  capital: MyString
+  business: MyString
+  delegate: MyString
+  address1: MyString
+  address2: MyString
+  intershipsContent: MyString
+  unit: MyString
+  receivingPerson: MyString
+  tel: MyString
+  email: MyString

@@ -11,7 +11,35 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121121082334) do
+ActiveRecord::Schema.define(:version => 20121126122334) do
+
+  create_table "after_interships", :force => true do |t|
+    t.integer  "intershipPriod"
+    t.string   "workingHours"
+    t.text     "impressionContents"
+    t.string   "levelOfAchievement"
+    t.text     "overallImpression"
+    t.text     "ambition"
+    t.text     "commentsOfTachers"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  create_table "before_interships", :force => true do |t|
+    t.string   "company"
+    t.string   "capital"
+    t.string   "business"
+    t.string   "delegate"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "intershipsContent"
+    t.string   "unit"
+    t.string   "receivingPerson"
+    t.string   "tel"
+    t.string   "email"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
 
   create_table "charts", :force => true do |t|
     t.datetime "created_at", :null => false
