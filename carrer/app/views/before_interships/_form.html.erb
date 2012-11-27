@@ -11,14 +11,13 @@
 		</div>
 	<% end %>
 	<h1>キャリアカルテ（CUCインターシップ）</h1>
-	<h2>《研修後記入事項》</h2>
+	<h2>《研修前記入事項》</h2>
 	<p class="description">1　　　インターシップの種類を選択してください学外ツールの方は使用された機関も選択してください。</p>
 	<div class="checkboxContents">
-		<div class="leftContents">
-			<input type="checkbox" name="q1" value="checkbox"> 単位認定型	
-			<br />
+		<div class="contents">
+			<p><input type="checkbox" /> 単位認定型</p>
 		</div>
-		<div class="rightContents">
+		<div class="contents">
 			<p>
 				キャリアアップ科目（商経学部・政策情報学部）※春学期2単位<br />
 				プロジェクト科目（サービス創造学部）　　　　※単位数は研修期間により異なる
@@ -26,71 +25,73 @@
 		</div>
 	</div>
 	<div class="checkboxContents">
-		<div class="leftContents">
-			<input type="checkbox" name="q1" value="checkbox"> オープンインターシップ
-			<br />
+		<div class="contents">
+			<p><input type="checkbox" /> オープンインターシップ</p>
 		</div>
-		<div class="rightContents">
+		<div class="contents">
 			<p>オープンインターシップとは、大学（キャリア支援センター）を通じて応募するインターシップ制度です。<br />単位取得には関係ありません。<br />企業から大学に寄せられたインターシップ情報はキャリア支援センター（本館2階）資料室に掲示します。<p>
 		</div>
 	</div>
 	<div class="checkboxtContents">
-		<div class="leftContents">
-			<input type="checkbox" name="q1" value="checkbox"> 学外ツール（就活サイト等）
-			<p>下記に当てはまる項目を選択してください。その他の方はツール名を記入してください。</p>
+		<div class="contents">
+			<p><input type="checkbox" /> 学外ツール（就活サイト等）<br />　下記に当てはまる項目を選択してください。その他の方はツール名を記入してください。</p>
 		</div>
-		<div class="rightContents">
-			<p>
-			
-			</p>
-		<div>
+		<div class="checkboxMany">
+			<label><input type="checkbox" /> リクナビ</label>
+			<label><input type="checkbox" /> ジョブラス</label>
+			<label><input type="checkbox" /> エンジャパン</label>
+			<label><input type="checkbox" /> マイナビ</label>
+			<label><input type="checkbox" /> アットインターシップ</label>
+			<label><input type="checkbox" /> インターンシップジャパン</label>
+			<label><input type="checkbox" /> その他：<input type="text" name="NAME"></label>
+		</div>
 	</div>
 	<p class="description">
 		2　　　研修先企業・団体名について（公開されている情報から転記）
 	</p>
 
 	<div class="field">
-		<p class="formLabel">①研修企業・団体名</p>
+		<p class="formLabel">①　研修企業・団体名</p>
 		<%= f.text_field :company %>
 	</div>
 	<div class="field">
-		<p class="formLabel">②資本金</p>
+		<p class="formLabel">②　資本金</p>
 		<%= f.text_field :capital %>
 	</div>
 	<div class="field">
-		<p class="formLabel">③事業内容</p>
+		<p class="formLabel">③　事業内容</p>
 		<%= f.text_field :business %>
 	</div>
 	<div class="field">
-		<p class="formLabel">④代表者</p>
+		<p class="formLabel">④　代表者</p>
 		<%= f.text_field :delegate %>
 	</div>
 	<div class="field">
-		<p class="formLabel">⑤所在地１（本社）</p>
+		<p class="formLabel">⑤　所在地１（本社）</p>
 		<%= f.text_field :address1 %>
 	</div>
 	<div class="field">
-	<p class="formLabel">⑥所在地２（実際の研修先）</p>
+	<p class="formLabel">⑥　所在地２（実際の研修先）</p>
 	<%= f.text_field :address2 %>
 	</div>
 	<div class="field">
-		<p class="formLabel">⑦インターシップ研修内容</p>
+		<p class="formLabel">⑦　インターシップ研修内容</p>
 		<%= f.text_field :intershipsContent %>
 	</div>
 	<div class="field">
-		<p class="formLabel">⑧研修部署</p>
+		<p class="formLabel">⑧　研修部署</p>
 		<%= f.text_field :unit %>
 	</div>
 	<div class="field">
-		<p class="formLabel">⑨受入担当者</p>
+		<p class="formLabel">⑨　受入担当者</p>
  		<%= f.text_field :receivingPerson %>
 	</div>
 	<div class="field">
-		<p class="formLabel">⑩ TEL</p>
+		<p class="formLabel">⑩　TEL</p>
 	<%= f.text_field :tel %>
 	</div>
 	<div class="field">
-		<p class="formLabel">⑪E-mail</p>
+		<p class="formLabel">⑪　E-mail</p>
 		<%= f.text_field :email %>
 	</div>
 	<div class="actions">

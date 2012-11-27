@@ -111,7 +111,7 @@
 
 
 div.wrapper{
-	width:60%;
+	width:70%;
 	height:100%;
 	background-color:#ddffdd;
 	margin:0 0 0 3px;
@@ -159,12 +159,19 @@ div.prof{
 	width:400px;
 }
 .checkboxContents{
-	height:50px;
+	height:70px;
 	clear:both;
+	margin-bottom:20px;
 }
-.checkboxContents>.rightContents{
-	float:right;
-}
-.checkboxContents>.leftContents{
+.checkboxContents>.contents{
 	float:left;
+	margin-right:20px;
+}
+.checkboxMany label {
+  display: block;
+  float: left;
+  width: 300px;
+}
+.description{
+	clear:both;
 }

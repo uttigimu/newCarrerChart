@@ -10,7 +10,8 @@
       </ul>
     </div>
   <% end %>
-
+	<h1>キャリアカルテ（CUCインターシップ）</h1>
+	<h2>《研修後記入事項》</h2>
   <div class="field">
     <p class="formLabel">①研修期間</p>
     <%= f.number_field :intershipPriod %>
@@ -18,6 +19,16 @@
   <div class="field">
     <p class="formLabel">②就業時間</p>
     <%= f.text_field :workingHours %>
+  </div>
+  <div class="checkboxSelect">
+		<p class="formLabel">③研修方法について当てはまる項目を選択してください。（複数選択可）</p>
+		<div class="checkboxY">
+		<p><input type="checkbox" /> 実務実践・就職体験型（複数部署経験型）・実習先の複数の部署を周り、業務を経験する形態。<br />
+		<input type="checkbox" /> 実務実践・就業体験型（単一部署中心型）・実習先の一つの部署で集中的に業務を行う形態。<br />
+		<input type="checkbox" /> プロジェクト型（問題解決・提言型）　　・与えられたテーマに沿って学生が調査し、問題解決の発表等をする形態。<br />
+		<input type="checkbox" /> 座学中心・企業見学型　　　　　　　　　・特定分野の業界・職種について理解を深めるための講義中心型。<br />
+		<input type="checkbox" /> その他：<input type="text" name="NAME"></p>
+		<div>
   </div>
   <div class="field">
     <p class="formLabel">⑤印象に残った研修内容</p>
@@ -36,7 +47,7 @@
     <%= f.text_field :ambition %>
   </div>
   <div class="field">
-    <p class="formLabel">担当教員からのコメント</p>
+    <p class="formLabel">担当教員からのコメント	</p>
     <%= f.text_field :commentsOfTachers %>
   </div>
   <div class="actions">
