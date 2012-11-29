@@ -128,33 +128,18 @@ h1.prof{
 	font-size:20px;
 }
 
-.table{
-	width:600px;
-	height:150px;
+.description{
 	clear:both;
-	float:left;
-	border: 1px solid #000000;
 }
-.tableLeftCell{
-	width:90px;
-	height:150px;
-	float:left;
-	border: 1px solid #000000;
-}
-.tableRightCell{
-	width:506px;
-	height:74px;
-	float:right;
-	border: 1px solid #000000;
-}
-
 div.prof{
 	width:120px;
 	height:150px;
 	float:right;
 	border: 1px solid #000000;
 	}
-
+.field{
+	clear:both;
+}
 .field>input{
 	width:400px;
 }
@@ -167,11 +152,78 @@ div.prof{
 	float:left;
 	margin-right:20px;
 }
-.checkboxMany label {
-  display: block;
-  float: left;
-  width: 300px;
-}
-.description{
+div.internshipWorkField{
+	height:350px;
 	clear:both;
+}
+.checkboxYcontents{
+	width:400px;
+	float:left;
+	margin:0px 20px 0px 20px;
+}
+.checkboxYcontents>.contentsY{
+	width:115px;
+	height:70px;
+	float:left;
+	margin-right:20px;
+}
+.checkboxYcontents>.checkboxY{
+	float:left;
+	margin-right:20px;
+}
+.field>div.checkboxY{
+	margin-left:20px;
+}
+.table{
+	display:block;
+	list-style:none;
+	mergin:0;
+	padding:0;
+}
+.table li{
+	clear:both;
+}
+.table li div{
+	display:block;
+	float:left;
+	border:1px solid #97a5b0;
+}
+.col1{
+	height:23px;
+	width:400px;
+	border-left:1px solid #97a5b0;
+}
+.col2{
+	height:23px;
+	width:170px;
+}
+.col3{
+	height:23px;
+	width:200px;
+}
+.head.col1{
+	height:50px;
+	border-top:1px solid #97a5b0;
+}
+.head{
+	height:50px;
+	border-top:1px solid #97a5b0;
+}
+.head>p{
+	margin:5px;
+}
+.col2>input{
+	width:150px;
+	margin-left:2px;
+}
+.col3>input{
+	width:180px;
+	margin-left:2px;
+}
+div.newlineNumber{
+	float:left;
+}
+div.newLine{
+	width:800px;
+	float:left;
 }

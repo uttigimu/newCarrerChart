@@ -13,24 +13,87 @@
 	<h1>キャリアカルテ（CUCインターシップ）</h1>
 	<h2>《研修後記入事項》</h2>
   <div class="field">
-    <p class="formLabel">①研修期間</p>
-    <%= f.number_field :intershipPriod %>
+	    <p class="formLabel">①研修期間</p>
+	    <%= f.number_field :intershipPriod %>
   </div>
   <div class="field">
     <p class="formLabel">②就業時間</p>
     <%= f.text_field :workingHours %>
   </div>
-  <div class="checkboxSelect">
+  <div class="field">
 		<p class="formLabel">③研修方法について当てはまる項目を選択してください。（複数選択可）</p>
 		<div class="checkboxY">
-		<p><input type="checkbox" /> 実務実践・就職体験型（複数部署経験型）・実習先の複数の部署を周り、業務を経験する形態。<br />
-		<input type="checkbox" /> 実務実践・就業体験型（単一部署中心型）・実習先の一つの部署で集中的に業務を行う形態。<br />
-		<input type="checkbox" /> プロジェクト型（問題解決・提言型）　　・与えられたテーマに沿って学生が調査し、問題解決の発表等をする形態。<br />
-		<input type="checkbox" /> 座学中心・企業見学型　　　　　　　　　・特定分野の業界・職種について理解を深めるための講義中心型。<br />
-		<input type="checkbox" /> その他：<input type="text" name="NAME"></p>
-		<div>
+			<p><input type="checkbox" /> 実務実践・就職体験型（複数部署経験型）・実習先の複数の部署を周り、業務を経験する形態。<br />
+			<input type="checkbox" /> 実務実践・就業体験型（単一部署中心型）・実習先の一つの部署で集中的に業務を行う形態。<br />
+			<input type="checkbox" /> プロジェクト型（問題解決・提言型）　　・与えられたテーマに沿って学生が調査し、問題解決の発表等をする形態。<br />
+			<input type="checkbox" /> 座学中心・企業見学型　　　　　　　　　・特定分野の業界・職種について理解を深めるための講義中心型。<br />
+			<input type="checkbox" /> その他：<input type="text"></p>
+		</div>
   </div>
-  <div class="field">
+	<div class="field">
+		<p class="formLabel">④研修した業務について当てはまる項目を選択してください。（複数選択可）</p>
+		<div class="checkbointernshipWorkField">
+  			<div class="checkboxYcontents">
+	  			<div class="contentsY">
+					<p>営業販売業務</p>
+				</div>
+				<div class="checkboxY">
+					<p><input type="checkbox" /> ・営業同行（個室・店舗・会社）<br />
+					<input type="checkbox" /> ・ポスティング<br />
+					<input type="checkbox" /> ・販売実習（接客、金銭授受）<br />
+					<input type="checkbox" /> ・商品発注、在庫管理<br />
+					<input type="checkbox" /> ・受付、フロント業務<br /></p>
+				</div>
+			</div>
+			<div class="checkboxYcontents">
+				<div class="contentsY">
+					<p>事務的な業務</p>
+				</div>
+				<div class="checkboxY">
+					<p><input type="checkbox" /> ・領収書チェック<br />
+					<input type="checkbox" /> ・伝票管理<br />
+					<input type="checkbox" /> ・財務入力<br />
+					<input type="checkbox" /> ・資料整理、資料作成<br />
+					<input type="checkbox" /> ・会議出席<br /></p>
+				</div>
+			</div>
+			<div class="checkboxYcontents">
+		  		<div class="contentsY">
+					<p>生産現場での業務</p>
+				</div>
+				<div class="checkboxY">
+					<p><input type="checkbox" /> ・品質管理、検査業務<br />
+					<input type="checkbox" /> ・検品作業<br />
+					<input type="checkbox" /> ・製品加工<br />
+					<input type="checkbox" /> ・生産管理<br /></p>
+				</div>
+			</div>
+			<div class="checkboxYcontents">
+				<div class="contentsY">
+					<p>グループワーク</p>
+				</div>
+				<div class="checkboxY">
+					<p><input type="checkbox" /> ・社内外での調査業務、企画<br />
+					<input type="checkbox" /> ・グループディスカッション<br />
+					<input type="checkbox" /> ・プレゼンテーション作成<br />
+					<input type="checkbox" /> ・発表、講評<br /></p>
+				</div>
+			</div>
+			<div class="checkboxYcontents">
+		 		<div class="contentsY">
+						<p>その他</p>
+				</div>
+				<div class="checkboxY">
+					<p><input type="checkbox" /> ・取材、収録、撮影<br />
+					<input type="checkbox" /> ・イベント企画設営、補助<br />
+					<input type="checkbox" /> ・各種講義<br />
+					<input type="checkbox" /> ・施設見学<br />
+					<input type="checkbox" /> ・その他：<input type="text"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="field">
     <p class="formLabel">⑤印象に残った研修内容</p>
     <%= f.text_field :impressionContents %>
   </div>
@@ -39,6 +102,129 @@
     <%= f.text_field :levelOfAchievement %>
   </div>
   <div class="field">
+		<p class="formLabel">⑦研修を通して発見したこと、気がついたことはなんですか？（上限3つまで選択してください。）</p>
+		<div class="checkboxY">
+			<p><input type="checkbox" /> ビジネスマナーやルール・コミュニケーションの大切さがわかった。<br />
+			<input type="checkbox" /> 研修先の業種、職種の理解が深まった。<br />
+			<input type="checkbox" /> 働くことへの意欲が高まった。<br />
+			<input type="checkbox" /> 働くことへの意義が理解できた。<br />
+			<input type="checkbox" /> 残りの大学生活の過ごし方を再度考えなおした。<br />
+			<input type="checkbox" /> 研修先とは別の業種、職種に興味を持つようになった。<br />
+			<input type="checkbox" /> 自分自身の課題に気がついた。<br />
+			<input type="checkbox" /> 自分の仕事への適性が理解できた。<br />
+			<input type="checkbox" /> その他<br /><input type="text"></p>
+		</div>
+  </div>
+  <div class="field">
+		<p class="formLabel">⑧研修内容(プログラム)に満足しましたか。（1つ選択してください。）</p>
+		<div class="checkboxY">
+			<p>
+				<input type="checkbox" /> 満足<br />
+				<input type="checkbox" /> だいたい満足<br />
+				<input type="checkbox" /> やや不満<br />
+				<input type="checkbox" /> 不満
+			</p>
+		</div>
+  </div>
+  <div class="field">
+		<p class="formLabel">
+			<div class="newlineNumber">⑨</div>
+			<div class="newLine">研修を終えて、自分自身、どの能力要素が伸びたと思いますか？	<br />「伸びた」と思う能力要素について「1」〜「3」の番号（「1」＝１番伸びたと考えている要素、「2」＝2番目に伸びたと考えている要素、「3」＝3番目に伸びたと考えている要素）をつけてください。<br />また、研修先で社会人の方々と接し、社会人として活躍するにはどの能力要素が重要だと考えましたか？<br />重要だと思う能力要素についても同様に「1」〜「3」の番号をつけてください。
+			</div>
+		</p>
+		<ul class="table">
+			<li>
+				<div class="col1 head"></div>
+				<div class="col2 head"><p>研修を終えて伸びたと思う能力要素はなんですか？</p></div>
+				<div class="col3 head"><p>社会人で活躍するにはどの能力要素が重要だと考えましたか？</p></div>
+			</li>
+			<li>
+				<div class="col1">物事に進んで取り組む力/主体性</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li><div class="col1">新しい価値を生み出す力/創造力</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">自分の意見をわかりやすく伝える力/発信力</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">社会のルールや人との約束を守る力/規律性</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">珍しい物事、未知の事柄に対して興味をもつ姿勢/好奇心</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">他人に働きかけ巻き込む力/働きかけ力</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">相手の意見を丁寧に聞く力/ 傾聴力</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">意見の違いや立場の違いを理解する力/柔軟性</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">自分と周囲の人々や物事との関係性を理解する力/状況把握力</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">目的を設定し確実に行動する力/実行力</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">現状を分析し目的や課題を明らかにする力/課題発見力</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">課題の解決に向けたプロセスを明らかにする力/計画力</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">ストレスの発生源に対する力/ストレスコントロール力</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">根気強くあきらめずに最後までやり遂げる姿勢/持続力</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">うまくいかなくてもめげない姿勢/楽観性</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">失敗を恐れずにチャレンジする姿勢/リスク・テイキング</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+			<li>
+				<div class="col1">自分自身に対する自身</div>
+				<div class="col2"><input type="number"></div>
+				<div class="col3"><input type="number"></div>
+			</li>
+		</ul>
+	</div>
+	<div class="field">
     <p class="formLabel">⑩研修全体を通しての感想</p>
     <%= f.text_field :overallImpression %>
   </div>
